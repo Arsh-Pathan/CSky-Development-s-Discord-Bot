@@ -12,7 +12,6 @@ const client = new Client({
 
 const MemberCountSystem = require('./systems/MemberCountSystem');
 const CountingSystem = require('./systems/CountingSystem');
-const CSkyCountingSystem = require('./systems/CSkyCountingSystem');
 const TicketSystem = require('./systems/TicketSystem');
 const OrderSystem = require('./systems/OrderSystem');
 const RewardSystem = require('./systems/RewardSystem');
@@ -41,7 +40,6 @@ client.on('ready', () => {
 
     // Initialize all systems
     const memberCountSystem = new MemberCountSystem(client);
-    const cskyCountingSystem = new CSkyCountingSystem(client);
     const countingSystem = new CountingSystem(client);
     const ticketSystem = new TicketSystem(client);
     const orderSystem = new OrderSystem(client);
